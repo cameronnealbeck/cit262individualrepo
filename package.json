@@ -1,0 +1,22 @@
+{
+  "name": "cit262individualrepo",
+  "version": "1.0.0",
+  "description": "This is the change",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronnealbeck/cit262individualrepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronnealbeck/cit262individualrepo/issues"
+  },
+  "homepage": "https://github.com/cameronnealbeck/cit262individualrepo#readme",
+  "dependencies": {
+    "mocha": "^9.2.2"
+  }
+}
