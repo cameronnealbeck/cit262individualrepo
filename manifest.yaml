@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cameron-stedi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cameron-stedi
+  template:
+    metadata:
+      labels:
+        app: cameron-stedi
+    spec:
+      containers:
+        - name: cameron-stedi
+          image: gcr.io/$PROJECT_ID/stedi-tests-cameron:latest
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: ".5"
+              memory: "500Mi"
+            requests:
+              cpu: ".25"
+              memory: "250Mi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 3
+            periodSeconds: 3
