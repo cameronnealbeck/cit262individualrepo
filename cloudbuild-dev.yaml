@@ -21,7 +21,6 @@ steps:
       - --location=us-east1-c
       - --output=tmp/outputdev
       - --cluster=cluster-2
-    
   - name: "gcr.io/cloud-builders/docker"
     id: Run
     args:
