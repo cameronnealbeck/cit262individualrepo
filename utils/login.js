@@ -11,7 +11,7 @@ const login = async ({userName, password}) => {
         }
     };
 
-    const apiResponse = await fetch('https://dev.stedi.me/login', options);
+    const apiResponse = await fetch('http://localhost:3000/login', options);
     const loginResponse = await apiResponse.text();
 
     return loginResponse;
