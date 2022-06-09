@@ -32,6 +32,12 @@ spec:
               port: 3000
             initialDelaySeconds: 3
             periodSeconds: 3
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 3
+            periodSeconds: 3
 
 ---
 
