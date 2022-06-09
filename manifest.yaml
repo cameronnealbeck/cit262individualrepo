@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: cameron-stedi
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: cameron-stedi
